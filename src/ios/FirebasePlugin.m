@@ -32,6 +32,7 @@ static FirebasePlugin *firebasePlugin;
 
 - (void)pluginInitialize {
     NSLog(@"Starting Firebase plugin");
+    [FIRApp configure];
     firebasePlugin = self;
 }
 
